@@ -1,0 +1,10 @@
+# Normalize text line endings; keep CAD and binary files byte-for-byte.
+* text=auto
+*.step binary
+*.STEP binary
+*.stp binary
+*.iges binary
+*.igs binary
+*.stl binary
+*.STL binary
+*.wasm binary

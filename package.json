@@ -1,0 +1,22 @@
+{
+  "name": "baja-vehicle-designer",
+  "private": true,
+  "version": "0.1.0",
+  "description": "3D interactive Baja SAE vehicle layout tool: chassis, dynamics, ergonomics, powertrain, hardware.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:artifact": "node scripts/build-artifact.mjs",
+    "preview": "vite preview",
+    "test": "node scripts/test-fea.mjs && node scripts/test-stress.mjs && node scripts/test-cad-import.mjs && node scripts/test-artifact.mjs && node scripts/test-drivers.mjs",
+    "sample": "node scripts/make-sample-frame.mjs"
+  },
+  "dependencies": {
+    "occt-import-js": "^0.0.23",
+    "three": "0.170.0"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}
